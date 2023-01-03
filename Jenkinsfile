@@ -1,9 +1,14 @@
+@Library('roboshop')
+
 pipeline {
  agent any
   stages {
    stage('code quality'){
      steps {
-       echo 'code quality'
+     script {
+     log.info 'code quality'
+     }
+       log.info 'code quality'
      }
    }
 
