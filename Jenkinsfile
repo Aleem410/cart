@@ -5,12 +5,11 @@ pipeline {
   stages {
    stage('code quality'){
      steps {
-     script {
+      script {
      log.info 'code quality'
      }
-       log.info 'code quality'
-     }
-   }
+    }
+  }
 
    stage('Test cases'){
      steps {
